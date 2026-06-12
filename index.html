@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>공주역사박물관 디지털 전시관</title></head>
+<body><h1>공주역사박물관 디지털 전시관</h1><div id="gallery"></div><script src="./data/collection.js"></script><script>
+const g=document.getElementById('gallery');
+collection.forEach(i=>g.innerHTML+=`<div><h2>${i.name}</h2><a href="viewer.html?id=${i.id}">3D 보기</a></div>`);
+</script></body></html>
